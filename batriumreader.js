@@ -27,8 +27,8 @@ mqttClient.on('connect', () => {
 function mqttSendConfigs() {
   mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Lowest cell voltage", "voltage", "cell_voltage_lowest", "V", "measurement");
   mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Highest cell voltage", "voltage", "cell_voltage_highest", "V", "measurement");
-  mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Lowest cell temp", "temperature", "cell_temp_lowest", "C", "measurement");
-  mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Highest cell temp", "temperature", "cell_temp_highest", "C", "measurement"), "measurement";
+  mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Lowest cell temp", "temperature", "cell_temp_lowest", "°C", "measurement");
+  mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Highest cell temp", "temperature", "cell_temp_highest", "°C", "measurement");
 
   mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Voltage", "voltage", "battery_voltage", "V", "measurement");
   mqttSendConfig("Deye12K", "deye12k", "Deye12K-Battery Current", "current", "battery_current", "A", "measurement");
