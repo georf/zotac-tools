@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "dotenv": "latest",
+    "binary-parser": "^2.2.1",
+    "influx": "latest",
+    "mqtt": "latest"
+  }
+}

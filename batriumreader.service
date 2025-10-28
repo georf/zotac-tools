@@ -1,0 +1,16 @@
+# link to /etc/systemd/system/batriumreader.service
+
+[Unit]
+Description=BatriumReader.js Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/node /opt/zotac-tools/batriumreader.js
+WorkingDirectory=/opt/zotac-tools
+Restart=always
+User=zotac-tools
+Group=zotac-tools
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
