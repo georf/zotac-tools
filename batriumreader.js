@@ -138,6 +138,7 @@ setInterval(() => {
 server.on("error", function (error) {
   console.log("Error: " + error);
   server.close();
+  process.exit(1);
 });
 
 var normalizedPath = require("path").join(__dirname, "payload");
