@@ -1,0 +1,17 @@
+[Unit]
+Description=Deye12K MQTT Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/zotac-tools/python-env/bin/python3 -u /opt/zotac-tools/deye12k.py
+Restart=always
+RestartSec=120
+
+WorkingDirectory=/opt/zotac-tools
+
+User=zotac-tools
+Group=zotac-tools
+
+[Install]
+WantedBy=multi-user.target
